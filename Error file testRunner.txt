@@ -1,0 +1,25 @@
+package testRunner;
+
+
+
+import org.junit.runner.RunWith;
+
+
+
+import io.cucumber.junit.Cucumber;-----error line
+import io.cucumber.junit.CucumberOptions;-----error line
+
+@RunWith(Cucumber.class)-------------error line
+@CucumberOptions(--------------error line
+		
+		features=" .//features/login.feature",
+         glue="stepDef",
+         dryRun= false,
+         monochrome=true,
+         plugin= {"pretty","html:target/cucumber-reports/reports1.html"}
+         
+         )
+
+public class Run {
+
+}
